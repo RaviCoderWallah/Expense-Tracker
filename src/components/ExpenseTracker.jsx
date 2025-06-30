@@ -1,25 +1,17 @@
+import ExpenseForm from "./ExpenseForm";
+import ExpenseTable from "./ExpenseTable";
+
+
 const ExpenseTracker = () => {
+
     return (
-        <div id="expense-tracker">
-            <h1>Trak Your Expense</h1>
-            <div id="expense-form">
-                <form>
-                    <div id="expense-title-container">
-                        <label for="expense-title">Title</label>
-                        <input type="text" name="expense-title" />
-                    </div>
-                    <div id="expense-category-container">
-                        <label for="expense-category"></label>
-                        <input type="text" name="expense-category" />
-                    </div>
-                    <div id="expense-amount-container">
-                        <label for="expense-amount"></label>
-                        <input type="text" name="expense-amount" />
-                    </div>
-                    <button>Add</button>
-                </form>
+        <div className=" bg-white sm:rounded-2xl rounded-sm min-w-[60%] mx-auto p-8 shadow-slate-500 shadow-sm" id="expense-tracker">
+            <h1 className="text-4xl text-teal-700 font-semibold" >Trak Your Expense</h1>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-12 mt-8" id="form">
+                <ExpenseForm />
+                <ExpenseTable />
             </div>
-            <div class="expense-table"></div>
+
         </div>
     )
 }
