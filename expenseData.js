@@ -3,7 +3,7 @@ export default [
         id: crypto.randomUUID(),
         title: "Milk",
         category: "Grocery",
-        amount: 599
+        amount: 899
     },
     {
         id: crypto.randomUUID(),
